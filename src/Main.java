@@ -49,5 +49,25 @@ public class Main {
         System.out.println(rd.nextInt());
         System.out.println(rd.nextInt(10));
         System.out.println(rd.nextInt(10, 20));
+
+        //encapsulation
+        BankAccount account = new BankAccount(123, 100);
+        account.getInfo();
+        account.deposit(100);
+        account.withdraw(50);
+        account.getInfo();
+
+        //inheritance
+        BankUser user = new BankUser("Jade", 20, true, 1234, 500);
+        user.getUserInfo();
+        if(user instanceof  BankAccount){
+            System.out.println("user instanceof  BankAccount");
+        }
+        if(user instanceof  BankUser){
+            System.out.println("user instanceof  BankUser");
+        }
+
+
+
     }
 }
