@@ -1,4 +1,4 @@
-public class BankUser extends BankAccount{
+public class BankUser extends BankAccount implements Bank{
     private String name;
     private int age;
     private String gender;
@@ -14,7 +14,7 @@ public class BankUser extends BankAccount{
         }
     }
 
-    public void getUserInfo(){
+    public void getInfo(){
         System.out.println("Name:\t"+this.name+
                 "\nAge:\t"+this.age+
                 "\nGender:\t"+gender);

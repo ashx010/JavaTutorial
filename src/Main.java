@@ -59,7 +59,7 @@ public class Main {
 
         //inheritance
         BankUser user = new BankUser("Jade", 20, true, 1234, 500);
-        user.getUserInfo();
+        user.getInfo();
         if(user instanceof  BankAccount){
             System.out.println("user instanceof  BankAccount");
         }
@@ -67,7 +67,9 @@ public class Main {
             System.out.println("user instanceof  BankUser");
         }
 
-
+        //lambda functions : it can be used by using interfaces
+        lambdaFunc lamb = x -> x * x;
+        System.out.println(lamb.square(10));
 
     }
 }

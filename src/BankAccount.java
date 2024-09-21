@@ -1,4 +1,4 @@
-public class BankAccount {
+public class BankAccount implements Bank{
     //Encapsulation as no one can access the below private data variables,
     //but can be accessed through methods defined in the class.
     //Encapsulation means to store data and methods in a single entity in this case its Class.
